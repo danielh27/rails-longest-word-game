@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>New Game</h1>
+
+  <ul class="grid-list">
+    <% @grid.each do |letter| %>
+      <li class="grid-letter"><%= letter %></li>
+    <% end %>
+  </ul>
+
+  <p>What is the longets word you can find?</p>
+
+  <form action="/score" method="post">
+    <input id="word" type="text" name="word">
+    <input id="submit" type="submit" value="Play">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :grid, @grid %>
+  </form>
+</div>

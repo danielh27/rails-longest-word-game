@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<% if @valid %>
+  <p><strong>Congratulations</strong> "<%= @data["word"] %>" is a valid English word! 🤑🤑</p>
+  <p><strong>Total Score: <%= @score %></strong></p>
+<% else %>
+  <p>Sorry but "<strong><%= @data["word"] %></strong>"" does not seem to be a valid English word...😥</p>
+<% end %>
+<%= link_to "New Game", new_path %>

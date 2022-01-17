@@ -1,0 +1,82 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 800px;
+}
+
+.grid-list {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.grid-letter {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #3498DC;
+  border: 1px solid #1296ee;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: default;
+}
+
+#word {
+  width: 80%;
+  height: 34px;
+  font-size: 18px;
+  vertical-align: bottom;
+  border: none;
+  box-shadow: 0 0 2px 1px #00000038;
+  border-radius: 5px;
+  color: #363636d2;
+}
+
+#word:focus {
+  outline: 1px solid #4d4d4d6c;
+}
+
+#submit {
+  width: 60px;
+  height: 34px;
+  border: none;
+  box-shadow: 0 0 2px 1px #00000038;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgba(216, 216, 216, 0.356);
+}
+
+a {
+  display: inline-block;
+  margin-top: 6px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  font-size: bold;
+  font-weight: bold;
+  background-color: #4349efbf;
+  box-shadow: 0 0 1px 0px #4349ef87;
+}
